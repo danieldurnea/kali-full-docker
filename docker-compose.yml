@@ -1,3 +1,10 @@
+# action.yml
+
+runs:
+  using: 'docker'
+  image: 'docker://typoci/spellcheck-action'
+  # When I want to check changes to my Dockerfile, I uncomment the following line:
+  # image: 'Dockerfile'
 version: '3'
 services:
   kali:
