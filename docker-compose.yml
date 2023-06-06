@@ -7,4 +7,4 @@ services:
     stdin_open: true
     tty: true
     ports:
-      - "8443:8443"
+      - "22:22"
