@@ -6,11 +6,6 @@ ENV TERM xterm-256color
 RUN apt update -y > /dev/null 2>&1 && apt upgrade -y > /dev/null 2>&1 && apt install locales -y \
 && localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 
-# Add NodeJS repo
-# Oh-my-git!
-RUN git clone https://github.com/arialdomartini/oh-my-git.git ~/.oh-my-git && \
-    echo source ~/.oh-my-git/prompt.sh >> /etc/profile
-
 
 # Define arguments and environment variables
 ARG NGROK_TOKEN
