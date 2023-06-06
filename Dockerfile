@@ -1,6 +1,4 @@
-FROM kalilinux/kali-linux-docker:latest
-
-MAINTAINER Xavi Torelló <info@xaviertorello.cat>
+FROM kalilinux/kali-rolling
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm-256color
